@@ -34,12 +34,12 @@ def hello_world():
     #return "<p>Hello, World!</p>"
 @app.route("/aboutus" , methods=['GET','POST'])
 def aboutus():
-    if request.method == 'POST':
-        name = request.form['title']
-        mes = request.form['desc']
-        todo = Todo(title = title, desc = desc)
-        db.session.add(todo)
-        db.session.commit()
+    # if request.method == 'POST':
+    #     name = request.form['title']
+    #     mes = request.form['desc']
+    #     todo = Todo(name = title, desc = desc)
+    #     db.session.add(todo)
+    #     db.session.commit()
         
     return render_template('aboutus.html') 
     
