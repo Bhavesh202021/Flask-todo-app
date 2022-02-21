@@ -42,7 +42,7 @@ def aboutus():
     #     todo = Todo(name = title, desc = desc)
     #     db.session.add(todo)
     #     db.session.commit()
-        print("I am bhavesh here")
+    print("I am bhavesh here")
     #return render_template('aboutus.html') 
     
     
