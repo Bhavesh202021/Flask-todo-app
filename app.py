@@ -32,8 +32,15 @@ def hello_world():
     return render_template('index.html' , allTodo = allTodo)
     #print(allTodo)
     #return "<p>Hello, World!</p>"
-@app.route("/aboutus")
+@app.route("/aboutus" , methods=['GET','POST'])
 def aboutus():
+    if request.method == 'POST':
+        name = request.form['title']
+        mes = request.form['desc']
+        todo = Todo(title = title, desc = desc)
+        db.session.add(todo)
+        db.session.commit()
+        
     return render_template('aboutus.html') 
     
     
