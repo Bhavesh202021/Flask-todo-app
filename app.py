@@ -32,7 +32,7 @@ def hello_world():
     return render_template('index.html' , allTodo = allTodo)
     #print(allTodo)
     #return "<p>Hello, World!</p>"
-@app.route("/aboutus")
+@app.route("/aboutus",methods=['GET','POST'])
 def aboutus():
     #return "<p>I am bhavesh here<p>"
     return render_template('aboutus.html' , allTodo = allTodo) 
