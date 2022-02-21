@@ -16,3 +16,14 @@ Set-ExcecutionPolicy unrestricted == set the powershell environmnet in normalmod
 <li class="nav-item">
      <a class="nav-link disabled">Disabled</a>
 </li>
+
+
+##git create
+
+git init
+git add.
+git commit -m"message"
+git push heroku master
+
+## video link
+https://www.youtube.com/watch?v=oA8brF3w5XQ&ab_channel=CodeWithHarry
