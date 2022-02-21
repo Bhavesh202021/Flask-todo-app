@@ -32,8 +32,10 @@ def hello_world():
     return render_template('index.html' , allTodo = allTodo)
     #print(allTodo)
     #return "<p>Hello, World!</p>"
-@app.route("/aboutus" , methods=['GET','POST'])
+@app.route("/aboutus")
 def aboutus():
+    allTodo = Todo.query.all()
+    print(allTodo)
     # if request.method == 'POST':
     #     name = request.form['title']
     #     mes = request.form['desc']
