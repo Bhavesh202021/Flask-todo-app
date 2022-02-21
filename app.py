@@ -35,7 +35,7 @@ def hello_world():
 @app.route("/aboutus")
 def aboutus():
     #return "<p>I am bhavesh here<p>"
-    return render_template('aboutus.html') 
+    return render_template('aboutus.html' , allTodo = allTodo) 
     
     
 @app.route("/show")
