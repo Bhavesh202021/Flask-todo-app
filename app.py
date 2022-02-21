@@ -34,16 +34,8 @@ def hello_world():
     #return "<p>Hello, World!</p>"
 @app.route("/aboutus")
 def aboutus():
-    allTodo = Todo.query.all()
-    print(allTodo)
-    # if request.method == 'POST':
-    #     name = request.form['title']
-    #     mes = request.form['desc']
-    #     todo = Todo(name = title, desc = desc)
-    #     db.session.add(todo)
-    #     db.session.commit()
     print("I am bhavesh here")
-    #return render_template('aboutus.html') 
+    return render_template('aboutus.html') 
     
     
 @app.route("/show")
