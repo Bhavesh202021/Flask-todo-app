@@ -32,17 +32,17 @@ def hello_world():
     return render_template('index.html' , allTodo = allTodo)
     #print(allTodo)
     #return "<p>Hello, World!</p>"
-@app.route("/aboutus",methods=['GET','POST'])
+@app.route("/aboutus")
 def aboutus():
-    #return "<p>I am bhavesh here<p>"
-    return render_template('aboutus.html' , allTodo = allTodo) 
+    return "<p> My name is Bhavesh Sondagar <br> Class B <br> Course : Electronic & Telecommunication <p>"    
+    #return render_template('aboutus.html' , allTodo = allTodo) 
     
     
 @app.route("/show")
 def products():
     allTodo = Todo.query.all()
     print(allTodo)
-    return "<p>This page for products page </p>"
+    return redirect("/https://www.hotelmanagement.net/")
 
 
 @app.route("/delete/<int:sno>")
