@@ -33,9 +33,9 @@ def hello_world():
     return render_template('index.html' , allTodo = allTodo)
     #print(allTodo)
     #return "<p>Hello, World!</p>"
-@app.route("/aboutus" , methods = ['GET','POST'])
+@app.route("/aboutus")
 def aboutus():
-    #return "<p> My name is Bhavesh Sondagar <br> Class B <br> Course : Electronic & Telecommunication <p>"    
+    
     return render_template('aboutus.html' , allTodo = allTodo) 
     
     
