@@ -34,15 +34,15 @@ def hello_world():
     #return "<p>Hello, World!</p>"
 @app.route("/aboutus")
 def aboutus():
-    return "<p> My name is Bhavesh Sondagar <br> Class B <br> Course : Electronic & Telecommunication <p>"    
-    #return render_template('aboutus.html' , allTodo = allTodo) 
+    #return "<p> My name is Bhavesh Sondagar <br> Class B <br> Course : Electronic & Telecommunication <p>"    
+    return render_template('aboutus.html' , allTodo = allTodo) 
     
     
 @app.route("/show")
 def products():
     allTodo = Todo.query.all()
     print(allTodo)
-    return redirect("/https://www.hotelmanagement.net/")
+    return redirect("https://www.hotelmanagement.net/")
 
 
 @app.route("/delete/<int:sno>")
