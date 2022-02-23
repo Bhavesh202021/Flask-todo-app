@@ -1,3 +1,4 @@
+from crypt import methods
 from flask import Flask , render_template,request,redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
@@ -32,7 +33,7 @@ def hello_world():
     return render_template('index.html' , allTodo = allTodo)
     #print(allTodo)
     #return "<p>Hello, World!</p>"
-@app.route("/aboutus")
+@app.route("/aboutus" , methods = ['GET','POST'])
 def aboutus():
     #return "<p> My name is Bhavesh Sondagar <br> Class B <br> Course : Electronic & Telecommunication <p>"    
     return render_template('aboutus.html' , allTodo = allTodo) 
