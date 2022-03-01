@@ -5,3 +5,9 @@ body{
   background-attachment: fixed;
   background-size: 100% 100%;
 }
+.table{
+  color: white;
+}
+.container {
+  color: rgb(10, 9, 22);
+}
