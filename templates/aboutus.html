@@ -5,7 +5,8 @@
 </head>
 <body>
 
-<img src="../static/about.jpg" alt="HTML5 Icon" style="width:500px;height:600px;">
+{% comment %} <img src="../static/about.jpg" alt="HTML5 Icon" style="width:500px;height:600px;"> {% endcomment %}
+<img src="{{ url_for('video_feed') }}" width="100%">
 
 </body>
 </html>
