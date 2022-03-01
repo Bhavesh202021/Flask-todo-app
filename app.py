@@ -2,6 +2,7 @@ from crypt import methods
 from flask import Flask , render_template,request,redirect,Response
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+import cv2
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todo.db'
@@ -41,7 +42,8 @@ def aboutus():
 def video():
 
     return Response(gen_frames(),mimetype='multipart/x-mixed-replace; boundary=frame')
-def gen_frames():  
+def gen_frames(): 
+    camera = cv2.VideoCapture(0) 
     while True:
         success, frame = camera.read()  # read the camera frame
         if not success:
