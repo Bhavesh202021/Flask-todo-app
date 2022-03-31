@@ -66,9 +66,10 @@
               </div>
             </form>
           </div>
-          <div class="tab-pane fade in" id="login" method="POST" action="{{ url_for('hello_world') }}">
-            <h2 class="text-uppercase text-center"> Log in</h2>
-            <form id="login">
+          <div class="tab-pane fade in" id="login">
+            <h2 class="text-uppercase text-center"> Login</h2>
+
+            <form action = "/login/myto-do">
               <div class="form-group">
                 <label> Your Email<span class="req">*</span> </label>
                 <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address." autocomplete="off">
@@ -80,7 +81,7 @@
                 <p class="help-block text-danger"></p>
               </div>
               <div class="mrgn-30-top">
-                <button type="submit" class="btn btn-larger btn-block"/>
+                <button type="submit" name = "submit" class="btn btn-larger btn-block"/>
                 Log in
                 </button>
               </div>

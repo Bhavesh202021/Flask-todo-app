@@ -19,7 +19,7 @@ class Todo(db.Model):
 
 
 
-@app.route("/",methods=['GET','POST'])
+@app.route("/login/myto-do",methods=['GET','POST'])
 def hello_world():
     if request.method == 'POST':
         title =  request.form['title']
@@ -35,30 +35,36 @@ def hello_world():
     #return "<p>Hello, World!</p>"
 
 
-@app.route("/login" or "/signup")
+@app.route("/login")
 def login():
     return render_template('login.html')
+
+
+@app.route("/")
+def login1():
+    return render_template('login.html')
    
-@app.route("/show")
+@app.route("/login/myto-do/show")
 def products():
     allTodo = Todo.query.all()
     print(allTodo)
     return redirect("https://www.hotelmanagement.net/")
 
-@app.route("/aboutus")
+@app.route("/login/myto-do/aboutus")
 def aboutus():
     return render_template('aboutus.html') 
 
-@app.route("/delete/<int:sno>")
+
+@app.route("/login/myto-do/delete/<int:sno>")
 def delete(sno):
     todo = Todo.query.filter_by(sno =sno).first()
     db.session.delete(todo)
     db.session.commit()
     #print(allTodo)
     #return "<p>This page for products page </p>"
-    return redirect("/")
+    return redirect("/login/myto-do")
 
-@app.route("/update/<int:sno>",methods=['GET','POST'])
+@app.route("/login/myto-do/update/<int:sno>", methods=['GET','POST'])
 def update(sno):
     if request.method == 'POST':
         title =  request.form['title']
@@ -68,7 +74,7 @@ def update(sno):
         todo.desc = desc
         db.session.add(todo)
         db.session.commit()
-        return redirect("/")
+        return redirect("/login/myto-do")
     
         
         
