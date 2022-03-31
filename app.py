@@ -34,31 +34,6 @@ def hello_world():
     #print(allTodo)
     #return "<p>Hello, World!</p>"
 
-@app.route("/user" ,methods = ['POST'])
-def user_post():
-    data = request.json
-    try:
-        temperature = data['temperature']
-        humidity = data['humidity']
-        light = data['light']
-        moistureLevel = data["moistureLevel"]
-        #post = open(f'./data/{user}.json','w')
-        
-        obj = {
-            'temperature': temperature,
-            'humidity':humidity,
-            'light':light,
-            'moistureLevel':moistureLevel  
-        }
-        print(obj)
-        # post.write(json.dumps(obj))
-        # post.close()
-        
-        return {'status_code':200,'message':'Post created successful'}
-        
-    except Exception as e:
-        return {'status_code':300 , 'message':f'Generic error:{str(e)}'}
-
 
 @app.route("/login" or "/signup")
 def login():
