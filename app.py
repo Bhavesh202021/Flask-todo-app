@@ -19,6 +19,10 @@ class Todo(db.Model):
 
 
 
+@app.route("/login/myto-do/feedback",methods=['GET','POST'])
+def feed_back():
+    return render_template('feedback.html')
+
 @app.route("/login/myto-do",methods=['GET','POST'])
 def hello_world():
     if request.method == 'POST':
