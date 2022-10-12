@@ -1,0 +1,28 @@
+2022-10-11 11:49:59,159 - app.py - login1 - INFO - home Page
+2022-10-11 12:20:10,141 - app.py - login1 - INFO - home Page
+2022-10-11 12:20:22,739 - app.py - hello_world - INFO - [1 - Read about PC Parts]
+2022-10-11 12:21:07,065 - app.py - hello_world - INFO - [1 - Read about PC Parts]
+2022-10-11 12:21:24,321 - app.py - hello_world - INFO - post
+2022-10-11 12:21:24,321 - app.py - hello_world - INFO - jenkins
+2022-10-11 12:21:24,322 - app.py - hello_world - INFO - ci-cd automation
+2022-10-11 12:22:06,082 - app.py - hello_world - INFO - post
+2022-10-11 12:22:06,083 - app.py - hello_world - INFO - jenkins
+2022-10-11 12:22:06,083 - app.py - hello_world - INFO - ci-cd automation
+2022-10-11 12:22:06,097 - app.py - hello_world - INFO - [1 - Read about PC Parts, 2 - jenkins, 3 - jenkins]
+2022-10-11 12:22:08,977 - app.py - hello_world - INFO - [1 - Read about PC Parts, 3 - jenkins]
+2022-10-11 12:23:15,086 - app.py - hello_world - INFO - [1 - Read about PC Parts, 3 - jenkins]
+2022-10-11 12:24:22,141 - app.py - hello_world - INFO - post
+2022-10-11 12:24:22,141 - app.py - hello_world - INFO - cs
+2022-10-11 12:24:22,141 - app.py - hello_world - INFO - scsc
+2022-10-11 12:51:56,838 - app.py - login1 - INFO - home Page
+2022-10-11 12:52:08,573 - app.py - login1 - INFO - home Page
+2022-10-11 12:54:21,297 - app.py - feed_back - INFO - currently working on feeback page! 
+2022-10-12 12:55:21,783 - app.py - login1 - INFO - home Page
+2022-10-12 13:01:01,507 - app.py - login1 - INFO - home Page
+2022-10-12 13:05:41,211 - app.py - login1 - INFO - home Page
+2022-10-12 13:22:12,581 - app.py - login1 - INFO - home Page
+2022-10-12 13:26:53,374 - app.py - login1 - INFO - home Page
+2022-10-12 14:39:00,809 - app.py - login1 - INFO - home Page
+2022-10-12 14:48:28,986 - app.py - login1 - INFO - home Page
+2022-10-12 16:48:39,156 - app.py - login1 - INFO - home Page
+2022-10-12 16:53:22,383 - app.py - feed_back - INFO - currently working on feeback page! 
